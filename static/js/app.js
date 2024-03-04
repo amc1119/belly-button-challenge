@@ -91,40 +91,40 @@ function charts(chartData) {
     }
   };
 
-  var gaugeData = [
-    {
-      // domain: { x: [0, 1], y: [0, 1] },
-      // value: washFrequency,
-      title: { 
-        useHTML: true,
-        text: "<strong>Belly Button Washing Frequency</strong><br>Scrubs per Week" 
-    },
-      type: "indicator",
-      mode: "gauge+number",
-      gauge: {
-        axis: { range: [null, 9] },
-        steps: [
-          { range: [0, 1], color: "pink" },
-          { range: [1, 2], color: "peach" },
-          { range: [2, 3], color: "light pink" },
-          { range: [3, 4], color: "light orange" },
-          { range: [4, 5], color: "lime" },
-          { range: [5, 6], color: "green" },
-          { range: [6, 7], color: "gray" },
-          { range: [7, 8], color: "gray" },
-          { range: [8, 9], color: "gray" }
-        ],
-        threshold: {
-          line: { color: "red", width: 4 },
-          thickness: 0.75,
-          value: 490
-        }
-      }
-    }
-  ];
+  // var gaugeData = [
+  //   {
+  //     // domain: { x: [0, 1], y: [0, 1] },
+  //     // value: washFrequency,
+  //     title: { 
+  //       useHTML: true,
+  //       text: "<strong>Belly Button Washing Frequency</strong><br>Scrubs per Week" 
+  //   },
+  //     type: "indicator",
+  //     mode: "gauge+number",
+  //     gauge: {
+  //       axis: { range: [null, 9] },
+  //       steps: [
+  //         { range: [0, 1], color: "pink" },
+  //         { range: [1, 2], color: "peach" },
+  //         { range: [2, 3], color: "light pink" },
+  //         { range: [3, 4], color: "light orange" },
+  //         { range: [4, 5], color: "lime" },
+  //         { range: [5, 6], color: "green" },
+  //         { range: [6, 7], color: "gray" },
+  //         { range: [7, 8], color: "gray" },
+  //         { range: [8, 9], color: "gray" }
+  //       ],
+  //       threshold: {
+  //         line: { color: "red", width: 4 },
+  //         thickness: 0.75,
+  //         value: 490
+  //       }
+  //     }
+  //   }
+  // ];
   
-  var gaugeLayout = { width: 600, height: 450, margin: { t: 0, b: 0 } };
-  Plotly.newPlot('gauge', gaugeData, gaugeLayout);
+  // var gaugeLayout = { width: 600, height: 450, margin: { t: 0, b: 0 } };
+  // Plotly.newPlot('gauge', gaugeData, gaugeLayout);
   
 
   var bubbleData = [bubbleTrace];
